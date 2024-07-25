@@ -1,0 +1,26 @@
+
+h1, h3, h5 {
+  color: yellowgreen;
+}
+.google-play-btn {
+  border-color: yellowgreen; 
+  border-width: 2px;
+  color: yellowgreen
+}
+#Title {
+  background-image: url("Images/Banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
