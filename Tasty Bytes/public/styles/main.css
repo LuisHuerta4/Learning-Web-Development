@@ -1,0 +1,43 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Pacifico', cursive;
+  background-color: #CE2C4A;
+}
+
+.Title{
+  background-color: #EFE5DF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Navbar {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 100px;
+  color: #CE2C4A; 
+}
+
+
+h1 {
+  color: #EFE5DF;
+}
+
+img {
+  max-width: 70px;
+  max-height: 7 0px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
