@@ -1,10 +1,9 @@
-html {
-  height: 100%;
-}
 
 body {
   font-family: 'Pacifico', cursive;
   background-color: #CE2C4A;
+  color:#EFE5DF;
+  margin: 0;
 }
 
 .Title{
@@ -12,32 +11,46 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
+.Title img {
+  max-width: 150px;
 }
 
 .Navbar {
   font-family: 'Raleway', sans-serif;
+  font-size: 25px;
   font-weight: bold;
   display: flex;
   flex-grow: 1;
-  justify-content: center;
-  gap: 100px;
+  justify-content: space-evenly;
   color: #CE2C4A; 
 }
 
-
-h1 {
-  color: #EFE5DF;
+.Hero {
+  position: relative;
 }
 
-img {
-  max-width: 70px;
-  max-height: 7 0px;
+.Hero img{
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+#Hero-image-bottom {
+  background-color: #EFE5DF;
+  width: 100%;
+  height: 30px;
 }
+
+#Hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the text */
+  font-size: 8vw; 
+  font-weight: bold;
+  text-shadow: 7px 4px 0px #CE2C4A; /* offset-x | offset-y | blur-radius | color */
+}
+
 
