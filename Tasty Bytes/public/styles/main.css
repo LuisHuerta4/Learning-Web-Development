@@ -53,4 +53,23 @@ body {
   text-shadow: 7px 4px 0px #CE2C4A; /* offset-x | offset-y | blur-radius | color */
 }
 
+.Directions {
+  text-align: center;
+  font-size: 2vh;
+}
+
+.Directions img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .Directions h2 {
+    font-size: 25px;
+  }
+  .Directions img {
+    max-width: 200px;
+  }
+}
 
