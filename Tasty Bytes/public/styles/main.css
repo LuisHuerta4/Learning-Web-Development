@@ -64,12 +64,59 @@ body {
   height: auto;
 }
 
-@media (max-width: 600px) {
+.Options {
+  display: flex;
+  justify-content: center;
+}
+
+.Container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+}
+
+.Card-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /*Makes it so image aspect ratio doesnt change*/
+}
+
+.Card-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -49%); /*Moves the image left by 50% and down by 49%*/
+  width: 80%;
+}
+
+.Card-text {
+  position: absolute;
+  bottom: -80px;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+@media (max-width: 800px) {
   .Directions h2 {
     font-size: 25px;
   }
   .Directions img {
     max-width: 200px;
+  }
+  .Card-text {
+    bottom: -10%;
+    font-size: 25px;
+
+  }
+}
+
+@media (max-width: 600px) {
+  .Card-text {
+    bottom: 15px;
   }
 }
 
