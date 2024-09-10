@@ -1,13 +1,12 @@
-
 body {
-  font-family: 'Pacifico', cursive;
-  background-color: #CE2C4A;
-  color:#EFE5DF;
+  font-family: "Pacifico", cursive;
+  background-color: #ce2c4a;
+  color: #efe5df;
   margin: 0;
 }
 
-.Title{
-  background-color: #EFE5DF;
+.Title {
+  background-color: #efe5df;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,27 +17,27 @@ body {
 }
 
 .Navbar {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 25px;
   font-weight: bold;
   display: flex;
   flex-grow: 1;
   justify-content: space-evenly;
-  color: #CE2C4A; 
+  color: #ce2c4a;
 }
 
 .Hero {
   position: relative;
 }
 
-.Hero img{
+.Hero img {
   width: 100%;
   height: auto;
   display: block;
 }
 
 #Hero-image-bottom {
-  background-color: #EFE5DF;
+  background-color: #efe5df;
   width: 100%;
   height: 30px;
 }
@@ -48,9 +47,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centers the text */
-  font-size: 8vw; 
+  font-size: 8vw;
   font-weight: bold;
-  text-shadow: 7px 4px 0px #CE2C4A; /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 7px 4px 0px #ce2c4a; /* offset-x | offset-y | blur-radius | color */
 }
 
 .Directions {
@@ -69,15 +68,19 @@ body {
   justify-content: center;
 }
 
+button {
+  background: none;
+  border: none;
+}
+
 .Container {
   position: relative;
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
   margin: 5px;
 }
 
 .Card-background {
-  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: contain; /*Makes it so image aspect ratio doesnt change*/
@@ -87,7 +90,10 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -49%); /*Moves the image left by 50% and down by 49%*/
+  transform: translate(
+    -50%,
+    -49%
+  ); /*Moves the image left by 50% and down by 49%*/
   width: 80%;
 }
 
@@ -97,8 +103,31 @@ body {
   width: 100%;
   font-size: 30px;
   text-align: center;
+  font-family: "Pacifico", cursive;
+  color: #efe5df;
 }
 
+.Ingredients-list {
+  width: 100%;
+  background-color: #efe5df;
+  margin-top: 100px;
+  padding-bottom: 25px;
+  color: #ce2c4a;
+  font-size: 30px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.Ingredients-list h2 {
+  padding-top: 10px;
+  color: #ce2c4a;
+  text-align: center;
+  font-size: 3vh;
+}
 
 @media (max-width: 800px) {
   .Directions h2 {
@@ -107,16 +136,4 @@ body {
   .Directions img {
     max-width: 200px;
   }
-  .Card-text {
-    bottom: -10%;
-    font-size: 25px;
-
-  }
 }
-
-@media (max-width: 600px) {
-  .Card-text {
-    bottom: 15px;
-  }
-}
-

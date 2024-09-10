@@ -14,7 +14,7 @@
   </head>
 
   <body>
-<!--Header Section-->
+    <!--Header Section-->
     <div class="Title">
       <img src="/images/Logo.png" alt="company logo" />
       <div class="Navbar">
@@ -23,38 +23,60 @@
         <p>Contact</p>
       </div>
     </div>
-<!--Hero Section-->
+    <!--Hero Section-->
     <div class="Hero">
       <img src="/images/RasberryTitle.png" />
       <div id="Hero-text">Tasty Bytes</div>
     </div>
     <div id="Hero-image-bottom"></div>
-<!--Directions-->
-<div class="Directions">
-  <h2>Select an Image for Ingredients</h2>
-  <img src="/images/DirectionPastry.png">
-</div>
-<!--Options-->
-<div class="Options">
-  <div class="Container">
-    <img class="Card-background" src="/images/FrillyCircle.png">
-    <img class="Card-image" src="/images/Brownies.png">
-    <p class="Card-text">Brownies</p>
-  </div>
-  <div class="Container">
-    <img class="Card-background" src="/images/FrillyCircle.png">
-    <img class="Card-image" src="/images/Cookies.png">
-    <p class="Card-text">Cookies</p>
-  </div>
-  <div class="Container">
-    <img class="Card-background" src="/images/FrillyCircle.png">
-    <img class="Card-image" src="/images/Eclair.png">
-    <p class="Card-text">Eclairs</p>
-  </div>
-  <div class="Container">
-    <img class="Card-background" src="/images/FrillyCircle.png">
-    <img class="Card-image" src="/images/Flan.png">
-    <p class="Card-text">Flan</p>
-  </div>
-</div>
+    <!--Directions-->
+    <div class="Directions">
+      <h2>Select an Image for Ingredients</h2>
+      <img src="/images/DirectionPastry.png" />
+    </div>
+    <!--Options-->
+    <form action="/recipe" method="post" class="Options">
+      <button type="submit" value="brownie" name="choice">
+        <div class="Container">
+          <img class="Card-background" src="/images/FrillyCircle.png" />
+          <img class="Card-image" src="/images/Brownies.png" />
+          <p class="Card-text">Brownies</p>
+        </div>
+      </button>
+      <button type="submit" value="cookie" name="choice">
+        <div class="Container">
+          <img class="Card-background" src="/images/FrillyCircle.png" />
+          <img class="Card-image" src="/images/Cookies.png" />
+          <p class="Card-text">Cookies</p>
+        </div>
+      </button>
+      <button type="submit" value="eclair" name="choice">
+        <div class="Container">
+          <img class="Card-background" src="/images/FrillyCircle.png" />
+          <img class="Card-image" src="/images/Eclair.png" />
+          <p class="Card-text">Eclairs</p>
+        </div>
+      </button>
+      <button type="submit" value="flan" name="choice">
+        <div class="Container">
+          <img class="Card-background" src="/images/FrillyCircle.png" />
+          <img class="Card-image" src="/images/Flan.png" />
+          <p class="Card-text">Flan</p>
+        </div>
+      </button>
+    </form>
+    <!--Ingredients List-->
+    <div class="Ingredients-list">
+      <h2>Ingredients</h2>
+      <% if (locals.recipe) { %>
+      <ul>
+        <% recipe.ingredients.forEach(ingredient => {%>
+        <li><%= ingredient.quantity %> of <%= ingredient.name %></li>
+        <% }); %>
+      </ul>
+      <% }else{ %>
+      <p>Select a pastry for Ingredients</p>
+      <% } %>
+    </div>
+  </body>
 </html>
