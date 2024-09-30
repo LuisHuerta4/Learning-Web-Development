@@ -20,6 +20,7 @@
 [![EJS][ejs-shield]][ejs-url]
 [![jQuery][jquery-shield]][jquery-url]
 [![JSON][json-shield]][json-url]
+[![PostgreSQL][postgres-shield]][postgres-url]
 
 <!-- Pricing Table -->
 ## Pricing Table
@@ -78,6 +79,23 @@ This project is a dynamic bakery website built using Node.js, Express.js, and EJ
 [![EJS][ejs-shield]][ejs-url]
 [![JSON][json-shield]][json-url]
 
+<!--To Do List-->
+## To Do List
+<div align="center">
+  <img src="To Do List/PreviewImg.png" width="auto" height="auto">
+</div>
+<br/>
+This project is a to-do list app where users can add, edit, and delete tasks. I built it to practice working with the PostgreSQL database, allowing information to be updated, removed, retrieved, and stored for later use. The app uses Node.js, Express.js, and EJS for server-side logic and templating, along with CSS for styling.
+
+### Built With
+[![HTML][html-shield]][html-url]
+[![CSS][css-shield]][css-url]
+[![JavaScript][javascript-shield]][javascript-url]
+[![Express.js][express-shield]][express-url]
+[![Node.js][nodejs-shield]][nodejs-url]
+[![EJS][ejs-shield]][ejs-url]
+[![PostgreSQL][postgres-shield]][postgres-url]
+
 <!-- MARKDOWN LINKS & IMAGES -->
 [css-shield]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
 [css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
@@ -99,3 +117,5 @@ This project is a dynamic bakery website built using Node.js, Express.js, and EJ
 [json-url]: https://www.json.org/
 [nodemon-shield]: https://img.shields.io/badge/Nodemon-76D04B?style=for-the-badge&logo=nodemon&logoColor=white
 [nodemon-url]: https://nodemon.io/
+[postgres-shield]: https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white
+[postgres-url]: https://www.postgresql.org/
