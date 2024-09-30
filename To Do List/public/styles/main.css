@@ -1,0 +1,100 @@
+html {
+  background-image: url("https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  margin: 0; 
+  color: #e7e0e0;
+}
+
+h1 {
+  padding: 10px;
+  font-size: 50px;
+}
+
+.box {
+  width: 100%; 
+  max-width: 800px; 
+  padding: 40px; 
+  background: rgba(0, 0, 0, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.978); /*offset-x offset-y blur-radius*/
+  backdrop-filter: blur(6px);
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.73);
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+  margin-left: 0;
+}
+
+p {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 25px;
+  flex-grow: 1; /*Makes text take up remaining space after justify-content space-between*/
+}
+
+button.add {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #0a4b16;
+  color: #e7e0e0;
+  font-size: 30px;
+  border-width: 0;
+}
+
+button.edit {
+  margin-left: 0px;
+  margin-right: 20px;
+  border: none;
+  background: none;
+  color: white;
+}
+
+.icon {
+  height: 30px;
+}
+
+input[type="text"] {
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 25px;
+  font-weight: 200;
+  width: 80%;
+  outline: none;
+  color: white;
+}
+
+input::placeholder {
+  color: lightgray; 
+}
+
+
+
+
+
+
